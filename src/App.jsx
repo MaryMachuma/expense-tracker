@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ExpenseForm from "./ExpenseForm";
-import ExpenseList from "./ExpenseList";
-import ExpenseChart from "./ExpenseChart";
-import Navbar from "./Navbar";
+import ExpenseForm from "./components/ExpenseForm";
+import ExpenseList from "./components/ExpenseList";
+import ExpenseChart from "./components/ExpenseChart";
+import Navbar from "./components/Navbar";
 import './App.css'
 
 
