@@ -7,11 +7,11 @@ function Navbar () {
             <div className="expenses">
                 <Link to="/expenses">Expenses</Link>
             </div>
-            <div className="/add-expense">
-                <Link to="/expenses">Add Expense</Link>
+            <div className="add-expense">
+                <Link to="/add-expenses">Add Expense</Link>
             </div>
-            <div className="/charts">
-                <Link to="/expenses">Charts</Link>
+            <div className="charts">
+                <Link to="/charts">Charts</Link>
             </div>
         </div>
     )
