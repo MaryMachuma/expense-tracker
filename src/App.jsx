@@ -6,6 +6,7 @@ import ExpenseChart from "./ExpenseChart";
 import Navbar from "./Navbar";
 import './App.css'
 
+
 const App = () => {
   const [expenses, setExpenses] = useState([]);
 
