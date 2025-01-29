@@ -18,6 +18,8 @@ function FilterPanel({ onFilter }) {
           <option value="Food">Food</option>
           <option value="Travel">Travel</option>
           <option value="Entertainment">Entertainment</option>
+          <option value="Bills">Bills</option>
+          <option value="Miscellaneous">Miscellaneous</option>
         </select>
   
         {/* Date range filter */}
