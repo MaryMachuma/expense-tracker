@@ -1,1 +1,25 @@
-{}
+{
+    "expenses": [
+      { "id": 1, "title": "Groceries", "amount": 50, "category": "Food", "date": "2024-01-15" },
+      { "id": 2, "title": "Gas", "amount": 40, "category": "Travel", "date": "2024-01-18" },
+      { "id": 3, "title": "Netflix Subscription", "amount": 15, "category": "Entertainment", "date": "2024-01-10" },
+      { "id": 4, "title": "Restaurant Dinner", "amount": 60, "category": "Food", "date": "2024-01-22" },
+      { "id": 5, "title": "Bus Ticket", "amount": 10, "category": "Travel", "date": "2024-01-19" },
+      { "id": 6, "title": "Movie Night", "amount": 25, "category": "Entertainment", "date": "2024-01-12" },
+      { "id": 7, "title": "Coffee", "amount": 5, "category": "Food", "date": "2024-01-17" },
+      { "id": 8, "title": "Flight Ticket", "amount": 300, "category": "Travel", "date": "2024-01-30" },
+      { "id": 9, "title": "Concert Ticket", "amount": 80, "category": "Entertainment", "date": "2024-01-25" },
+      { "id": 10, "title": "Fast Food", "amount": 12, "category": "Food", "date": "2024-01-14" },
+      { "id": 11, "title": "Taxi Fare", "amount": 20, "category": "Travel", "date": "2024-01-21" },
+      { "id": 12, "title": "Gaming Subscription", "amount": 10, "category": "Entertainment", "date": "2024-01-11" },
+      { "id": 13, "title": "Groceries", "amount": 70, "category": "Food", "date": "2024-01-28" },
+      { "id": 14, "title": "Hotel Stay", "amount": 150, "category": "Travel", "date": "2024-01-29" },
+      { "id": 15, "title": "Music Streaming", "amount": 8, "category": "Entertainment", "date": "2024-01-09" },
+      { "id": 16, "title": "Lunch", "amount": 18, "category": "Food", "date": "2024-01-16" },
+      { "id": 17, "title": "Train Ticket", "amount": 35, "category": "Travel", "date": "2024-01-20" },
+      { "id": 18, "title": "Theater Play", "amount": 50, "category": "Entertainment", "date": "2024-01-23" },
+      { "id": 19, "title": "Dinner", "amount": 45, "category": "Food", "date": "2024-01-27" },
+      { "id": 20, "title": "Road Trip Gas", "amount": 90, "category": "Travel", "date": "2024-01-31" }
+    ]
+  }
+  
