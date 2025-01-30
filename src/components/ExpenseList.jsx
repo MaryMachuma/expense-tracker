@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import FilterPanel from "./FilterPanel";
 import "../Styles/ExpenseList.css";
 
-const ExpenseList = ({ expenses, setExpenses}) => {
+const ExpenseList = ({ expenses = [], setExpenses }) => {
   const [filteredExpenses, setFilteredExpenses] = useState([]);
 
   useEffect(() => {

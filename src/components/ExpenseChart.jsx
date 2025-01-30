@@ -7,7 +7,7 @@ import "../Styles/ExpenseChart.css";
 // Registering necessary chart.js components
 ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale, LinearScale);
 
-const ExpenseChart = ({ expenses }) => {
+const ExpenseChart = ({ expenses = [] }) => {
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [{
