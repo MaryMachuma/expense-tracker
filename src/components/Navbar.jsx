@@ -1,20 +1,19 @@
-import React from "react";
+//Navbar.jsx
 import { Link } from "react-router-dom";
+import "../Styles/Navbar.css";
 
-function Navbar () {
-    return (
-        <div className="navbar">
-            <div className="expenses">
-                <Link to="/expenses">Expenses</Link>
-            </div>
-            <div className="add-expense">
-                <Link to="/add-expenses">Add Expense</Link>
-            </div>
-            <div className="charts">
-                <Link to="/charts">Charts</Link>
-            </div>
-        </div>
-    )
+function Navbar() {
+  return (
+    <div className="navbar">
+      <h2 className="title">EXPENSE TRACKER</h2>
+      <div className="nav-items">
+        <Link to="/expenses">Expenses</Link>
+        <Link to="/add-expense">Add Expense</Link>
+        <Link to="/charts">Charts</Link>
+        {/* <Link to="/summary">Summary</Link> */}
+      </div>
+    </div>
+  );
 }
 
 export default Navbar;

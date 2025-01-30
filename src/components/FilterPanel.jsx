@@ -1,4 +1,6 @@
-// Filters by category and date
+//FilterPanel.jsx
+import { useState } from "react";
+import "../Styles/FilterPanel.css";
 
 function FilterPanel({ onFilter }) {
     const [filters, setFilters] = useState({ category: "", startDate: "", endDate: "" });
@@ -23,21 +25,11 @@ function FilterPanel({ onFilter }) {
         </select>
   
         {/* Date range filter */}
-        <input
-          type="date"
-          name="startDate"
-          value={filters.startDate}
-          onChange={handleFilterChange}
-        />
-        <input
-          type="date"
-          name="endDate"
-          value={filters.endDate}
-          onChange={handleFilterChange}
-        />
+        <input type="date" name="startDate" value={filters.startDate} onChange={handleFilterChange} />
+        <input type="date" name="endDate" value={filters.endDate} onChange={handleFilterChange} />
       </div>
     );
-  }
+  };
   
-  export default FilterPanel;
+export default FilterPanel;
   
