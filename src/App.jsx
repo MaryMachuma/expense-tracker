@@ -1,32 +1,44 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ExpenseForm from "./ExpenseForm";
-import ExpenseList from "./ExpenseList";
-import ExpenseChart from "./ExpenseChart";
-import Navbar from "./Navbar";
+import ExpenseForm from "./components/ExpenseForm";
+import ExpenseList from "./components/ExpenseList";
+import ExpenseChart from "./components/ExpenseChart";
+import Navbar from "./components/Navbar";
+
+
 
 const App = () => {
   const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/expenses")
-      .then((res) => res.json())
-      .then((data) => setExpenses(data));
+    const fetchExpenses = async () => {
+      try {
+        const response = await fetch("http://localhost:3001/expenses");
+        const data = await response.json();
+        setExpenses(data);
+      } catch (error) {
+        console.error("Error fetching expenses:", error);
+      }
+    };
+    fetchExpenses();
   }, []);
 
-  const addExpense = (newExpense) => {
-    fetch("http://localhost:3001/expenses", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newExpense),
-    })
-      .then((res) => res.json())
-      .then((data) => setExpenses([...expenses, data]));
+  const addExpense = async (newExpense) => {
+    try {
+      const response = await fetch("http://localhost:3001/expenses", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newExpense),
+      });
+      const data = await response.json();
+      setExpenses((prevExpenses) => [...prevExpenses, data]);
+    } catch (error) {
+      console.error("Error adding expense:", error);
+    }
   };
 
   return (
     <Router>
-      <Navbar />
       <div className="container mx-auto p-4">
         <Routes>
           <Route path="/expenses" element={<ExpenseList expenses={expenses} />} />
