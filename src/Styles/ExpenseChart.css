@@ -1,0 +1,27 @@
+/* ExpenseChart.css */
+
+/* Styling for the container holding the chart */
+.expense-chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F8F1EB; /* White background for the chart container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  h2 {
+    font-size: 1.5rem;
+    color: #8F794B; /* Champagne color for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .expense-chart-container {
+      padding: 10px;
+    }
+  }
